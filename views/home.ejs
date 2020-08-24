@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>
+            <%=title%>  
+        </title>
+
+        <link rel="stylesheet" href="/css/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <a href="https://icons8.com/icon/KzesLA1YPU25/more"></a>
+    </head>
+
+    <body>
+
+       
+        <div id="app-area">
+        <h1><%=title%></h1>
+        <form action="create-item" method="POST">
+            <label for="description" id="desc-label">Description</label>
+            <textarea id="description" name="description" placeholder="What do you need to do"></textarea>
+
+            <div id="row-two">
+            <label for="category" id="cat-label">Category</label>
+            <select id="category" name="category">
+                <option>Choose A Category</option>
+                <option>Home</option>
+                <option>Market</option>
+                <option>Office</option>
+                <option>School</option>
+                <option>College</option>
+        
+            </select>
+            <span id="due-date  ">
+            <label for="date" id="date-label">Due Date</label>
+            <input type="date" id="date" name="date">
+            </span>
+            </div>
+            <div class="buttons">
+            <i class="fas fa-plus" style="color:white; position: relative; left: 2rem;"></i>
+            <button type="submit" id="add">ADD TASK</button>
+            
+           
+            
+            </div>
+        </form>
+
+        
+
+        <div id="list-items">
+            <ul>
+
+                <% for(let i of list_items){%>
+                <li>
+                    <a href="delete-item?id=<%=i._id %>">
+                    <input type="checkbox" id="box"></a>
+                    <span id="desc"><p><%=i.description%></p></span>
+                    <span id="dat"><p><%=i.date%></p></span>
+                    <span id="categ"><p><%=i.category%></p></span>
+                
+                </li>
+                
+                <%}%>
+            </ul>
+        </div>
+    </div>
+
+    
+
+    
+         <script type="text/javascript" src="/js/home.js"></script>
+    </body>
+</html>
