@@ -1,9 +1,13 @@
-<header>
-    Page headerrr
+<header id="head">
+    <h2 id="titl">Codeial</h2>
+    
     <ul>
         <% if(locals.user){%>
             <li>
             <a href="/profile"><%=user.name%></a>    
+            </li>
+            <li>
+                <a href="/posts/second">Posts</a>
             </li>
             <li>
                 <a href="/sign-out">Sign Out</a>
@@ -11,11 +15,14 @@
         <%}
         else{%>
             <li>
+                <a href="/posts/second">Posts</a>
+            </li>
+            <li>
                 <a href="/sign-in">Sign in</a>
             </li>
 
             <li>
-                <a href="/sign-in">Sign Up</a>
+                <a href="/sign-up">Sign Up</a>
             </li>
         <%}%>
 

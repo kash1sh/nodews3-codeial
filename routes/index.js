@@ -16,7 +16,7 @@ console.log('router loaded');
 
 router.get('/',homeController.home);
 router.use(express.urlencoded());
-router.get('/second',home2Controller.home2);
+router.get('/posts/second',home2Controller.home2);
 
 
 router.post('/create-item',userController.profile);

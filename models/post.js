@@ -1,4 +1,5 @@
-const mongoose = reqiure('mongoose');
+const mongoose = require('mongoose');
+// const COmment = require('./comment');
 
 const postSchema = new mongoose.Schema({
     content:{
@@ -6,9 +7,15 @@ const postSchema = new mongoose.Schema({
         reqiured: true
     },
     user: {
-        type: mongoose.Schema.Types.ObjetId,
-        ref: 'User'
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'USer'
+    },
+    comment:[
+     {
+        type: mongoose.Schema.Types.ObjectId,
+        ref:'COmment'
     }
+]
 },{
     timestamps: true
 });

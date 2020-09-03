@@ -1,5 +1,18 @@
 <h1>Codeial</h1>
         
-<p><%=user.name%></p>
-<p><%=user.email%></p>
+
        
+
+<% if(user.id == profile_us.id){%>
+    <form action="/update/<%=profile_us.id%>" method="POST">
+    <input type="text" name="name" placeholder="Your Name" value="<%=profile_us.name%>" required>
+    <input type="email" name="email" placeholder="Your Email" value="<%=profile_us.email%>" required>
+    <input type="submit" value="Update">
+</form> 
+<%}
+else
+{%>
+    <p><%=profile_us.name%></p>
+    <p><%=profile_us.email%></p>
+
+<%}%>

@@ -1,4 +1,31 @@
-<h1>
-    Codeial/<%=title%>
-    Bawaseer
-</h1>
+<link rel="stylesheet" href="/codeial/assets/css/home2.css"> 
+<div id="home-container">
+
+<section id="feed-posts">
+    <h4>Posts</h4>
+<%if(locals.user){%>
+    <form action="/posts/create" id="new-post-form" method="POST">
+        <textarea name="content" cols="30" rows="3" placeholder="Lets Post"></textarea>
+        <input type="submit" value="Post">
+    <%}%>
+    </form>
+    <div id="posts-list-container">
+        <ul>
+            <%-include('_post')-%>
+
+        </ul>
+    </div>
+</section>
+
+<section id="user-friends">
+    <h4>Friends</h4>
+
+    <% for(u of all_users){%>
+<!-- jo profile hai vo maine users ke under nahi rakhi hai,so directly profile hi likhna hoga, users ki jaroorat nahi hai -->
+            <p>
+                <a href="/profile/<%=u.id%>"><%= u.name%></a>
+            </p>
+
+    <%}%>   
+</section>
+</div>

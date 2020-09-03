@@ -65,6 +65,8 @@ app.use(passport.setAuthenticatedUser);
 // use express router
 app.use('/',require('./routes/index'));
 app.use('/',require('./routes/users'));
+app.use('/posts',require('./routes/posts'));
+app.use('/comments',require('./routes/comments'));
 
 app.listen(port,function(err){
     if(err)
