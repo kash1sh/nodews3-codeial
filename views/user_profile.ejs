@@ -1,13 +1,15 @@
-<h1>Codeial</h1>
-        
+<!-- <h1>Codeial</h1> -->
+<img src="<%=user.avatar%>" alt ="<%=user.name%>" width="100px">
 
-       
+     
 
 <% if(user.id == profile_us.id){%>
-    <form action="/update/<%=profile_us.id%>" method="POST">
+    <form action="/update/<%=profile_us.id%>" enctype="multipart/form-data" method="POST" >  
     <input type="text" name="name" placeholder="Your Name" value="<%=profile_us.name%>" required>
     <input type="email" name="email" placeholder="Your Email" value="<%=profile_us.email%>" required>
+    <input type="file" name="avatar" placeholder="Profile Picture">
     <input type="submit" value="Update">
+    
 </form> 
 <%}
 else
@@ -16,3 +18,6 @@ else
     <p><%=profile_us.email%></p>
 
 <%}%>
+<!-- same photo hai na shayad isliye ,photo change karoo kya? nhi zrurt nhi..kyunki dono ways se chlega..,ye ab kaise load ho raha hai? kyunki tumne  /update payh likha hi nhi tha..toh controller kbi cll hi nhi hua tha,maine update/profile_us  likha tha kahaa
+    ate nhi tha
+haaa yhaa pr likha..but ioh hona chahiyaage kaha ja rhi h , route nhi -->

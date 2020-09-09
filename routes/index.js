@@ -17,7 +17,7 @@ console.log('router loaded');
 router.get('/',homeController.home);
 router.use(express.urlencoded());
 router.get('/posts/second',home2Controller.home2);
-
+router.use('/api',require('./api'));
 
 router.post('/create-item',userController.profile);
 

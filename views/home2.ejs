@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/codeial/assets/css/home2.css"> 
+<link rel="stylesheet" href="/codeial/assets/css/home2.1.css"> 
 <div id="home-container">
 
 <section id="feed-posts">
@@ -11,8 +11,9 @@
     </form>
     <div id="posts-list-container">
         <ul>
+            <% for( post of posts){%>
             <%-include('_post')-%>
-
+            <%}%>
         </ul>
     </div>
 </section>
@@ -29,3 +30,6 @@
     <%}%>   
 </section>
 </div>
+
+<script src="/codeial/assets/js/home_posts.js"></script>
+<script src="/codeial/assets/js/home_comments.js"></script>

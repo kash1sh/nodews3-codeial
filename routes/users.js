@@ -6,6 +6,7 @@ const db = require('../config/mongoose');
 router.use(express.urlencoded());
 const usersController = require('../controllers/new_user_controller');
 
+router.post("/update/:id" , usersController.update);
 router.get(
   '/profile/:id',
   passport.checkAuthentication,
@@ -33,3 +34,8 @@ router.post(
   usersController.createSession,
 );
 module.exports = router;
+
+//where is/update?
+// which update?
+// shayd nahi daala hoga route
+// index,js mein add karoo kya?ha
