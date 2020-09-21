@@ -1,6 +1,11 @@
 const COmment = require('../models/comment');
 const POst  = require('../models/post');
 const { param, post } = require('../routes/posts');
+const commentsMailer = require('../mailers/comments_mailers');
+const commentEmailWorker = require('../workers/comment_email_worker');
+const queue = require('../config/kue');
+// const LIkes = require('../models/like');
+const LIke = require('../models/like');
 
 module.exports.created = async function(req,res){
    try{
@@ -12,12 +17,22 @@ module.exports.created = async function(req,res){
                 content:req.body.content,
                 post:req.body.post,
                 user:req.user._id
-            })
+            })      
             // .sort('-createdAt');
 
                 post.comment.push(comment);
                 post.save();
 
+                comment  = await comment.populate('user','name email').execPopulate();
+                // commentsMailer.newComment(comment);
+
+                let job =queue.create('emails',comment).save(function(err){
+                    if(err){
+                        console.log('Error in sending to the queue',err);
+                        return;
+                    }
+                    console.log('job enqueued',job.id);
+                })
                 if(req.xhr){
                     return res.status(200).json({
                         data:{
@@ -52,6 +67,8 @@ module.exports.destroy = async function(req,res){
 
             let post = await POst.findByIdAndUpdate(postId, { $pull: {comments : req.params.id}});
 
+            // CHANGE::likes
+            await LIke.deleteMany({likeable:comment._id,onModel:'COmment'});
             if(req.xhr){
                 return res.status(200).json({
                     data: {

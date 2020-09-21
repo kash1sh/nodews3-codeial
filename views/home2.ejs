@@ -1,4 +1,5 @@
-<link rel="stylesheet" href="/codeial/assets/css/home2.1.css"> 
+<link rel="stylesheet" href="/css/home3.css"> 
+<link rel="stylesheet" href="/css/chat_box.css">
 <div id="home-container">
 
 <section id="feed-posts">
@@ -19,7 +20,7 @@
 </section>
 
 <section id="user-friends">
-    <h4>Friends</h4>
+    <h4>Fake-Friends</h4>
 
     <% for(u of all_users){%>
 <!-- jo profile hai vo maine users ke under nahi rakhi hai,so directly profile hi likhna hoga, users ki jaroorat nahi hai -->
@@ -28,8 +29,28 @@
             </p>
 
     <%}%>   
+
+    
+
+    <%- include('_chat_box') -%>
 </section>
 </div>
 
-<script src="/codeial/assets/js/home_posts.js"></script>
-<script src="/codeial/assets/js/home_comments.js"></script>
+<script src="/js/home_posts.js"></script>
+<script src="/js/home_comments.js"></script>
+<script src="/js/toggle_likes.js"></script>
+<script>
+    $('.toggle-like-button').each(function(){
+        let self = this;
+        let ToggleLike = new ToggleLike(self);
+    })
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+<script src="/js/chat_engine.js"></script>
+<% if(locals.user){%>
+<script>
+    new ChatEngine('user-chat-box','<%= locals.user.email %>');
+</script>
+<%}%>
+

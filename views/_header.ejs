@@ -14,9 +14,9 @@
             </li>
         <%}
         else{%>
-            <li>
+            <!-- <li>
                 <a href="/posts/second">Posts</a>
-            </li>
+            </li> -->
             <li>
                 <a href="/sign-in">Sign in</a>
             </li>
@@ -28,3 +28,22 @@
 
     </ul>
 </header>
+ <!-- what are you suing this href for ?
+    shayad jab sign in nhi hai tab wo to broo sessino handle karega you dont need this
+    nahi, jab sign in nahi and i want to see the post, toh shayad ye uske liye hai,/posts/second pe hai posts saari
+    broo header.ejs main post kon dekhega body main dalna thaa ye <: nahi bhai ye link hai na posts page pe jaane ka, vo toh header pe hi aayega na?
+    bhaii posts by default load honge wait let me show you http://54.237.158.65/ yahan kaahan aaya h posts ke liye kuchh in header ???ek second
+    maine posts ka ek link daal diya hai,usme koi issue hai? dont know broo need to see how you are sending data from backend to this file
+    and then what data is being sent , and honestly iss link ki need nahi h posts ka link kyun chahiye jab when you can get all posts on home page 
+    and if you want to do this way then implementation change karna hoga sir ke code ka or what you can do it 
+    make a different route and controller for this task ??
+    mera point ye tha ki jaise mai login ke baad directly signed-in home page pe aata hoo, toh vaha se post ko access kaise karoonga phir, if i dont have a link for posts
+    okk i get you try making / creating a different route for fetching posts ??acha aap directly posts show kar rahe ho, haan sir ne ye hi kiya h 
+    to tum for now issko follow karo and once course complete ho try experimenting tabb takk sufficient, haa ok delete kar deta hoo ise
+    rather than deleting code like this i would suggest make a different branch on git for this type of experimentation 
+    to code ye jo remove kiya wo saved rahega 
+    yaar git ka alag hi scene hai, ye sab upload ho raha hai, mai commit kar raha hoo, but show hi nahi raha , course main h to git ?? haa vo shuru shuru ka hi dekha tha, vo mai karloonga , abhi aap iska bata do
+    for this you should create a different route and controller to fetch all the posts and users of the posts and comments everything 
+    cool ?
+    ha ok, cool 
+ -->

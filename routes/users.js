@@ -35,7 +35,5 @@ router.post(
 );
 module.exports = router;
 
-//where is/update?
-// which update?
-// shayd nahi daala hoga route
-// index,js mein add karoo kya?ha
+router.get('/auth/google',passport.authenticate('google',{scope:['profile','email']}));
+router.get('/auth/google/callback',passport.authenticate('google',{failureRedirect:'/sign-up'}),usersController.createSession);

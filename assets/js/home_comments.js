@@ -1,4 +1,4 @@
-const { get } = require("mongoose");
+// const { get } = require("mongoose");
 {
 let createComment = function(){
     let newCommentForm = $('#new-comments-form');
@@ -14,6 +14,9 @@ let createComment = function(){
                 let newComment = newCommentDom(data.data.comment);
                 $('#post-comments-list>ul').prepend(newComment);   
                 deleteComment($(' .delete-comment-button',newComment)); 
+
+                  // CHANGE::
+                  new ToggleLike($('.toggle-like-button',newPost));
             } ,
             error:function(error){
                 console.log(error.responseText);
@@ -37,6 +40,10 @@ let createComment = function(){
                     <br>
                     <small>
                         ${comment.user.name}
+                    </small>
+                    <small>
+                    <a class="toggle-like-button" data-likes="0" href="/likes/toggle/?id=${post._id}&type=Post">\
+                    0 Likes</a>
                     </small>
                 </p>
         

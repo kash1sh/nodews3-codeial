@@ -11,6 +11,7 @@ const home2Controller = require('../controllers/home2_controller');
 const homeController = require('../controllers/home_controller');
 const userController = require('../controllers/users_controller');
 const deleteController=require('../controllers/delete_controller');
+const { route } = require('./api');
 
 console.log('router loaded');
 
@@ -22,5 +23,7 @@ router.use('/api',require('./api'));
 router.post('/create-item',userController.profile);
 
 router.get('/delete-item',deleteController.dele);
+router.use('/likes',require('./likes'));
+router.use('/friend',require('./friends'));
 
 module.exports = router;    
