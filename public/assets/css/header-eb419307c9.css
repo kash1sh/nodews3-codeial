@@ -1,0 +1,16 @@
+#head {
+  width: 100%;
+  height: 5rem;
+  background-color: blue;
+  color: white;
+  margin-top: -1rem;
+  display: flex;
+  justify-content: space-between; }
+
+#head li {
+  display: inline;
+  margin-left: 2rem;
+  font-size: 1.2rem; }
+
+#head li a {
+  color: white; }

@@ -1,4 +1,6 @@
 const express = require('express');
+const env = require('./config/environment');
+const logger = require('morgan');   
 const cookieParser = require('cookie-parser');
 const app = express();
 const port=8000;
@@ -18,6 +20,8 @@ const { db } = require('./models/user');
 const MongoStore = require('connect-mongo')(session);
 const sassMiddleware = require('node-sass-middleware');
 
+
+
 const flash =  require('connect-flash');
 const customMware = require('../codeial/config/middleware');
 // setting up the chat server to be used with socket.io 
@@ -26,18 +30,25 @@ const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
 chatServer.listen(5000);
 console.log(`Chat server is listening on port ${port}`); 
 
-// 
-app.use(sassMiddleware({
-    src: './assets/scss',
-    dest: './assets/css',
-    debug:true,
-    outputStyle:'extended',
-    prefix:'/css'
-}))
+
+//
+const path = require('path');
+if(env.name == 'development')
+{
+    app.use(sassMiddleware({
+        src: path.join(__dirname,env.asset_path,'scss'),
+        dest: path.join(__dirname,env.asset_path,'css'),
+        debug:true,
+        outputStyle:'extended',
+        prefix:'/css'
+    }))
+} 
+
 app.use(expressLayouts);
 
-app.use(express.static('./assets'));
+app.use(express.static(env.asset_path));
 
+app.use(logger(env.morgan.mode,env.morgan.options));
 
 app.use(cookieParser());
 app.set('layout extractStyles',true);
@@ -52,7 +63,7 @@ app.set('views','./views');
 app.use(session({
     name:'codeial',
     // TODO:    change the secret 
-    secret:'blahdsomething',
+    secret:env.session_cookie_key,
     saveUninitialized :false,
     resave:false,
     cookie:{

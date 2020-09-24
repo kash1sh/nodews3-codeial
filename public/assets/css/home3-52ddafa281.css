@@ -1,0 +1,7 @@
+#user-friends {
+  color: yellow; }
+
+#home-container {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 12rem; }
