@@ -39,8 +39,8 @@ const development = { //bro give me a sec i knoe how to fix this, bhai bas thoda
 
 }
 
-const production = {
-    name:'production',/*Doubt*/
+const production = {// ye name kyun h ?issko set nahi kiya tumne ?bhai kiya tha nahi chal rha tha isliye production try kiya tha
+    name:process.env.CODEIAL_ENVIRONMENT,/*Doubt*/// bhaii kya kiya hua h ye sab tumne , bhai batao kya dikkat hai,
     asset_path:process.env.CODEIAL_ASSET_PATH,
     session_cookie_key:process.env.CODEIAL_SESSION_COOKIE_KEY,
     db:process.env.CODEIAL_DB,
@@ -68,13 +68,7 @@ const production = {
     }
 
 }
-// blahdsomething
 
-
-module.exports = eval(process.env.CODEIAL_ENVIRONMENT)==undefined?development:eval(process.env.CODEIAL_ENVIRONMENT);   //bro why did u changed he code?
-// original code pe bhi error aa raha tha, and sir ne kaha tha ki node_env thoda jyaada use hota hai har jagah, isliye
-//restore the original ok please dont leave the doubt or be offline, s, ha 1 min bas
-// wait ??listten bro 
-//for environment variable to work in WINDOWS 10, you need to restart the PC, did u restarted after setting up NODE_ENV?
-// nope, ek kaam karta hoo, original code likhta hoo, phir restart karta hoo, aap abhi doubt leave mat karna
-// bro aapne sare variable store karwwa lie the? in ha bhaienr acah lets c restart , same error aa raha hai
+console.log( eval(process.env.CODEIAL_ENVIRONMENT)?'production' : 'development');
+// module.exports = development;
+module.exports = eval(process.env.CODEIAL_ENVIRONMENT)==undefined?development:eval(process.env.CODEIAL_ENVIRONMENT); 

@@ -1,8 +1,10 @@
 const express = require('express');
 const env = require('./config/environment');
 const logger = require('morgan');   
+
 const cookieParser = require('cookie-parser');
 const app = express();
+require('./config/view-helpers')(app);
 const port=8000;
 
 
@@ -13,7 +15,6 @@ const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const passportJWT = require('./config/passport-jwt-strategy');
 const passportgoogle = require('./config/passport-google-oauth2-strategy');
-
 const expressLayouts = require('express-ejs-layouts');
 const { db } = require('./models/user');
 
@@ -32,6 +33,8 @@ console.log(`Chat server is listening on port ${port}`);
 
 
 //
+console.log('env : ',env.name);
+
 const path = require('path');
 if(env.name == 'development')
 {

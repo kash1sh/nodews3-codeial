@@ -1,0 +1,287 @@
+::ffff:127.0.0.1 - - [28/Sep/2020:06:34:59 +0000] "GET /posts/second HTTP/1.1" 200 4308 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:34:59 +0000] "GET /css/layout.css HTTP/1.1" 200 128 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:34:59 +0000] "GET /css/header.css HTTP/1.1" 200 262 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:34:59 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:34:59 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:00 +0000] "GET /favicon.ico HTTP/1.1" - - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:02 +0000] "GET /sign-in HTTP/1.1" 200 3781 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:02 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:02 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:02 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:03 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:13 +0000] "POST /create-session HTTP/1.1" 302 60 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:13 +0000] "GET /sign-in HTTP/1.1" 200 3966 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:13 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:13 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:35:13 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:40:46 +0000] "GET /sign-in HTTP/1.1" 200 3781 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:40:46 +0000] "GET /css/layout.css HTTP/1.1" 200 128 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:40:46 +0000] "GET /css/footer.css HTTP/1.1" 200 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:40:46 +0000] "GET /css/header.css HTTP/1.1" 200 262 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:40:46 +0000] "GET /favicon.ico HTTP/1.1" - - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:40:48 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:41:03 +0000] "POST /create-session HTTP/1.1" 302 60 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:41:03 +0000] "GET /sign-in HTTP/1.1" 200 3966 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:41:03 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:41:03 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::ffff:127.0.0.1 - - [28/Sep/2020:06:41:03 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:01:58 +0000] "GET /sign-up HTTP/1.1" 200 3912 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:01:58 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:01:58 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:01:58 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:01:58 +0000] "GET /favicon.ico HTTP/1.1" - - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:23 +0000] "POST /create HTTP/1.1" 302 60 "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:23 +0000] "GET /sign-in HTTP/1.1" 200 3781 "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:23 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:24 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:24 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:37 +0000] "GET /api/v1/posts HTTP/1.1" 200 38 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /posts/second HTTP/1.1" 200 4549 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:02:45 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /posts/second HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:09 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:21 +0000] "GET /sign-in HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:21 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:21 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:21 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:53 +0000] "POST /create-session HTTP/1.1" 302 60 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:53 +0000] "GET /profile HTTP/1.1" 200 4519 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:53 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:53 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:53 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:57 +0000] "GET /posts/second HTTP/1.1" 200 5244 "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:04:58 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "POST /posts/create HTTP/1.1" 302 112 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "GET /posts/second HTTP/1.1" 200 7072 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:04 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:05 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:05 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /likes/toggle?id=5f718b20e0e66d328ca11600&type=POst HTTP/1.1" 302 112 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /posts/second HTTP/1.1" 200 6899 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:08 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "POST /comments/create HTTP/1.1" 302 112 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "GET /posts/second HTTP/1.1" 200 7536 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:15 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:16 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:16 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /likes/toggle?id=5f718b2be0e66d328ca11603&type=COmment HTTP/1.1" 302 112 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /posts/second HTTP/1.1" 200 7362 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:05:18 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:26:40 +0000] "GET /sign-in HTTP/1.1" 302 68 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:26:40 +0000] "GET /profile/:id HTTP/1.1" 500 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /posts/second HTTP/1.1" 200 7362 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /css/layout.css HTTP/1.1" 200 128 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /css/header.css HTTP/1.1" 200 262 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /css/footer.css HTTP/1.1" 200 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:07:27:00 +0000] "GET /favicon.ico HTTP/1.1" - - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+[0mGET /posts/second [32m200[0m 133.377 ms - 15988[0m
+[0mGET /posts/css/home3.css [33m404[0m 93.244 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 161.646 ms - 161[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 65.005 ms - 161[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 31.520 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 31.791 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 9.190 ms - 162[0m
+[0mGET /favicon.ico [0m-[0m - ms - -[0m
+[0mGET /sign-in [32m200[0m 6.444 ms - 3781[0m
+[0mGET /css/layout.css [32m200[0m 13.568 ms - 128[0m
+[0mGET /css/header.css [32m200[0m 14.059 ms - 262[0m
+[0mGET /css/footer.css [32m200[0m 18.097 ms - -[0m
+[0mGET /auth/google [36m302[0m 7.664 ms - 0[0m
+[0mGET /auth/google/callback?code=4%2F4gEYe_8OFh33KMYBtUKIpPIvGeB_xvaGSf8iO8DJs1JDoo_GqdelR2O09HbQPEmUqnkerehV6RsUHZNTcQ_9oxA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=consent [36m302[0m 580.998 ms - 60[0m
+[0mGET /profile [32m200[0m 20.909 ms - 4573[0m
+[0mGET /css/footer.css [36m304[0m 25.151 ms - -[0m
+[0mGET /css/layout.css [32m200[0m 17.431 ms - 128[0m
+[0mGET /css/header.css [36m304[0m 30.932 ms - -[0m
+[0mGET /uploads/users/avatars/avatar-1599581955084 [32m200[0m 87.429 ms - 43904[0m
+[0mGET /favicon.ico [0m-[0m - ms - -[0m
+[0mGET /posts/second [32m200[0m 37.323 ms - 27233[0m
+[0mGET /posts/css/home3.css [33m404[0m 19.369 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 22.553 ms - 161[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 31.842 ms - 161[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 42.694 ms - 164[0m
+[0mGET /css/header.css [36m304[0m 55.330 ms - -[0m
+[0mGET /css/footer.css [36m304[0m 52.921 ms - -[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 53.723 ms - 163[0m
+[0mGET /css/layout.css [36m304[0m 64.825 ms - -[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 10.775 ms - 162[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 10.055 ms - 162[0m
+[0mPOST /posts/create [36m302[0m 15.577 ms - 112[0m
+[0mGET /posts/second [32m200[0m 41.420 ms - 29061[0m
+[0mGET /posts/css/home3.css [33m404[0m 11.900 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 13.051 ms - 161[0m
+[0mGET /css/layout.css [36m304[0m 35.306 ms - -[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 27.048 ms - 161[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 27.431 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 31.751 ms - 163[0m
+[0mGET /css/footer.css [36m304[0m 32.839 ms - -[0m
+[0mGET /css/header.css [36m304[0m 33.584 ms - -[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 13.884 ms - 162[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 4.112 ms - 162[0m
+[0mPOST /comments/create [36m302[0m 13.959 ms - 112[0m
+[0mGET /posts/second [32m200[0m 55.513 ms - 29520[0m
+[0mGET /posts/css/home3.css [33m404[0m 8.893 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 11.468 ms - 161[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 28.892 ms - 161[0m
+[0mGET /css/layout.css [36m304[0m 38.116 ms - -[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 34.678 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 35.844 ms - 163[0m
+[0mGET /css/header.css [36m304[0m 44.476 ms - -[0m
+[0mGET /css/footer.css [36m304[0m 39.929 ms - -[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 7.041 ms - 162[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 3.204 ms - 162[0m
+[0mGET /posts/second [32m200[0m 65.620 ms - 31754[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 29.162 ms - 161[0m
+[0mGET /posts/css/home3.css [33m404[0m 49.396 ms - 158[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 27.541 ms - 164[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 26.843 ms - 161[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 46.799 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 47.757 ms - 162[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 4.539 ms - 161[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 8.694 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 5.470 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 4.076 ms - 162[0m
+[0mGET /likes/toggle?id=5f719117bc8480456833b31e&type=COmment [36m302[0m 20.945 ms - 112[0m
+[0mGET /posts/second [32m200[0m 39.398 ms - 31754[0m
+[0mGET /posts/css/home3.css [33m404[0m 57.405 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 40.752 ms - 161[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 41.636 ms - 161[0m
+[0mGET /css/layout.css [32m200[0m 56.997 ms - 128[0m
+[0mGET /css/footer.css [32m200[0m 67.819 ms - -[0m
+[0mGET /css/header.css [32m200[0m 64.084 ms - 262[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 48.572 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 40.323 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 18.319 ms - 162[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 4.723 ms - 162[0m
+[0mGET /likes/toggle?id=5f719112bc8480456833b31d&type=POst [36m302[0m 9.432 ms - 112[0m
+[0mGET /posts/second [32m200[0m 54.189 ms - 31754[0m
+[0mGET /posts/css/home3.css [33m404[0m 49.115 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 49.498 ms - 161[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 51.675 ms - 161[0m
+[0mGET /css/layout.css [36m304[0m 65.756 ms - -[0m
+[0mGET /css/header.css [36m304[0m 52.430 ms - -[0m
+[0mGET /css/footer.css [36m304[0m 64.739 ms - -[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 44.825 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 44.195 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 15.746 ms - 162[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 5.832 ms - 162[0m
+[0mGET /comments/destroy/5f719117bc8480456833b31e [36m302[0m 19.190 ms - 112[0m
+[0mGET /posts/second [32m200[0m 42.776 ms - 31290[0m
+[0mGET /posts/css/home3.css [33m404[0m 46.113 ms - 158[0m
+[0mGET /posts/css/chat_box.css [33m404[0m 34.144 ms - 161[0m
+[0mGET /posts/js/home_posts.js [33m404[0m 33.241 ms - 161[0m
+[0mGET /css/header.css [36m304[0m 33.023 ms - -[0m
+[0mGET /css/footer.css [36m304[0m 48.160 ms - -[0m
+[0mGET /css/layout.css [36m304[0m 52.739 ms - -[0m
+[0mGET /posts/js/home_comments.js [33m404[0m 37.156 ms - 164[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 19.062 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 32.367 ms - 162[0m
+[0mGET /posts/js/toggle_likes.js [33m404[0m 7.649 ms - 163[0m
+[0mGET /posts/js/chat_engine.js [33m404[0m 8.063 ms - 162[0m
+::1 - - [28/Sep/2020:08:04:21 +0000] "GET /profile HTTP/1.1" 302 60 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:21 +0000] "GET /sign-in HTTP/1.1" 200 3781 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:22 +0000] "GET /css/layout.css HTTP/1.1" 200 128 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:22 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:22 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:22 +0000] "GET /favicon.ico HTTP/1.1" - - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:26 +0000] "POST /create-session HTTP/1.1" 302 60 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:26 +0000] "GET /profile HTTP/1.1" 200 4519 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:26 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:26 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:26 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:29 +0000] "GET /posts/second HTTP/1.1" 200 7542 "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:04:30 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:53 +0000] "GET /posts/second HTTP/1.1" 200 7542 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:53 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:53 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:53 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:53 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:54 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET /sign-out HTTP/1.1" 302 46 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET / HTTP/1.1" 200 5492 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET /css/home.css HTTP/1.1" 200 2795 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:57 +0000] "GET /js/home.js HTTP/1.1" 200 32 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:59 +0000] "GET /sign-in HTTP/1.1" 304 - "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:59 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:59 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:23:59 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:03 +0000] "GET /sign-up HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:03 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:03 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:03 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:30 +0000] "POST /create HTTP/1.1" 302 60 "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:30 +0000] "GET /sign-in HTTP/1.1" 200 3781 "http://localhost:8000/sign-up" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:30 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:30 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:30 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:36 +0000] "POST /create-session HTTP/1.1" 302 60 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:36 +0000] "GET /profile HTTP/1.1" 200 4515 "http://localhost:8000/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:36 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:36 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:36 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /posts/second HTTP/1.1" 200 7435 "http://localhost:8000/profile" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /css/layout.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /css/header.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /css/footer.css HTTP/1.1" 304 - "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"
+::1 - - [28/Sep/2020:08:24:40 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/posts/second" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:81.0) Gecko/20100101 Firefox/81.0"

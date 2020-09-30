@@ -26,10 +26,7 @@ try{
         .populate({
             path:'comment',
             populate: {
-                path : 'user'
-            },
-            populate: {
-                path: 'likes'
+                path : 'user likes'   // <-- isse kaam ho jaega,ok got iSt
             }
         }).populate('likes');
         
