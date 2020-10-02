@@ -8,7 +8,7 @@ require('./config/view-helpers')(app);
 const port=8000;
 
 
-app.use(express.urlencoded());
+app.use(express.urlencoded({extended:false}));
 // used for session cookie
 const session = require('express-session');
 const passport = require('passport');
@@ -24,7 +24,7 @@ const sassMiddleware = require('node-sass-middleware');
 
 
 const flash =  require('connect-flash');
-const customMware = require('./config/middleware');   <-- ye kya h ?Shayad flash messages ke liye tha ye path glt hai, ha ./
+const customMware = require('./config/middleware'); 
 // setting up the chat server to be used with socket.io 
 const chatServer = require('http').Server(app);
 const chatSockets = require('./config/chat_sockets').chatSockets(chatServer);
