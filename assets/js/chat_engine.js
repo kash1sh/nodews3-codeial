@@ -11,12 +11,7 @@ class ChatEngine{
         }
     }
 
-// bda simple hai ---- sab kuch same chlega , routes controller sab define krna pdega bss page reload nhi hoga -> uske liye 
-// jquery ek feature deta h ajax call ka -> ajax call se pehle hum defaultbehaviour rok dete h taaki refresh na ho 
-// and routes se hote huye controller tk pahuchte h --- ab hum vaha controller se koi page render nhi kraenge 
-// kukki page toh h already ---- itna smje ?ha samajh gaya;;;;;;;   bs ab controller m jo kaam krvana h , like post create ya delete 
-// vo bilkul same chelga bss in the end hum json data return krdenge 
-// vo json data callback m aaega ajax ki --- or us callback m hum jese chahe vese use krte h 
+
 
     connectionHandler(){
         let self = this;
